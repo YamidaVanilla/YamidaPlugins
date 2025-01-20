@@ -1,2 +1,3 @@
-token: ""
-chatId: "1328812726163607624"
+discord:
+  token: ""
+  channel: ""

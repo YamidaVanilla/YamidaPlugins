@@ -1,7 +1,4 @@
 name: YamidaChat
-main: dev.nobrain.yamidachat.Plugin
 version: 1.0
+main: dev.nobrain.statsbot.Main
 api-version: 1.20
-
-libraries:
-  - net.dv8tion:JDA:5.2.2
