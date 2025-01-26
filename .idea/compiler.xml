@@ -2,9 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="event-system" target="21" />
+      <module name="event-system.main" target="21" />
+      <module name="event-system.test" target="21" />
       <module name="stats-bot" target="21" />
       <module name="stats-bot.main" target="21" />
       <module name="stats-bot.test" target="21" />
+      <module name="subscribe-bot" target="21" />
+      <module name="subscribe-bot.main" target="21" />
+      <module name="subscribe-bot.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

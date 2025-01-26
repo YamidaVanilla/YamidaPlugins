@@ -1,0 +1,4 @@
+name: YamidaSubscribe
+version: 1.0
+main: xyz.yamida.subscribebot.Main
+api-version: 1.20

@@ -41,8 +41,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="stats-bot.main" />
+    <orderEntry type="library" name="Gradle: xyz.yamida:jda-commander:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: net.dv8tion:JDA:5.2.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.0.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:4.12.0" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.13" level="project" />
     <orderEntry type="library" name="Gradle: com.neovisionaries:nv-websocket-client:2.14" level="project" />

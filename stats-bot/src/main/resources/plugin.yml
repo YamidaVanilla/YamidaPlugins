@@ -1,4 +1,4 @@
 name: YamidaChat
 version: 1.0
-main: dev.nobrain.statsbot.Main
+main: xyz.yamida.statsbot.Main
 api-version: 1.20

@@ -1,0 +1,4 @@
+name: YamidaEvent
+version: 1.0
+main: xyz.yamida.eventsystem.Main
+api-version: 1.20

@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/YamidaPlugins.iml" filepath="$PROJECT_DIR$/.idea/YamidaPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-system.iml" filepath="$PROJECT_DIR$/event-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/event-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/event-system.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/stats-bot.iml" filepath="$PROJECT_DIR$/stats-bot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/stats-bot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/stats-bot.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/stats-bot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/stats-bot.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/subscribe-bot.iml" filepath="$PROJECT_DIR$/subscribe-bot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subscribe-bot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/subscribe-bot.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subscribe-bot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/subscribe-bot.test.iml" />
     </modules>
   </component>
 </project>
