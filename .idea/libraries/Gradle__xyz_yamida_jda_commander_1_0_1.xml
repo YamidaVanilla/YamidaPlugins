@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: xyz.yamida:jda-commander:1.0.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="xyz.yamida" artifactId="jda-commander" version="1.0.1" baseVersion="1.0.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/xyz.yamida/jda-commander/1.0.1/a4490461fdbac5f01cbd3f7f4e22ba03a796e77b/jda-commander-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -9,6 +9,7 @@ import org.bukkit.event.Listener
 class MinecraftToDiscordListener(val channel: TextChannel) : Listener {
     val plainTextSerializer = PlainTextComponentSerializer.plainText()
     val adPattern = Regex("""\b(?:\w+\.)?(?:gg|com|ru|net|org|xyz|tk|io|cf|ly)/[^\s]+\b""", RegexOption.IGNORE_CASE)
+    val pingPattern = Regex("@\\S+|<@\\d+>|<#\\d+>")
     val recentMessages = mutableMapOf<String, MutableList<String>>()
 
     @EventHandler
@@ -16,16 +17,13 @@ class MinecraftToDiscordListener(val channel: TextChannel) : Listener {
         val playerName = event.player.name
         val message = plainTextSerializer.serialize(event.message())
 
-        if (isAdvertisement(playerName, message)) {
+        if (isAdvertisement(playerName, message) || containsPing(message)) {
             event.isCancelled = true
-            channel.sendMessage("⚠️ **$playerName** попытался отправить подозрительное сообщение").queue()
+            channel.sendMessage("⚠️ **$playerName** попытался отправить запрещённое сообщение").queue()
             return
         }
 
-        val sanitizedMessage = message.replace("@everyone", "Все", ignoreCase = true)
-            .replace("@here", "Все", ignoreCase = true)
-
-        channel.sendMessage("**$playerName**: $sanitizedMessage").queue()
+        channel.sendMessage("**$playerName**: $message").queue()
     }
 
     fun isAdvertisement(playerName: String, message: String): Boolean {
@@ -42,5 +40,9 @@ class MinecraftToDiscordListener(val channel: TextChannel) : Listener {
         }
 
         return false
+    }
+
+    fun containsPing(message: String): Boolean {
+        return pingPattern.containsMatchIn(message)
     }
 }
