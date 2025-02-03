@@ -8,7 +8,6 @@ import org.bukkit.Server
 class DiscordToMinecraftListener(val server: Server) : ListenerAdapter() {
     override fun onMessageReceived(event: MessageReceivedEvent) {
         if (event.author.isBot) return
-        if (event.channel.id != "1328812726163607624") return
 
         val playerName = event.author.name
         val originalMessage = event.message
